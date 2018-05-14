@@ -29,7 +29,7 @@ public class AccesoABaseDeDatos {
             Statement s = conexion.createStatement();
 
             // Se realiza la consulta. Los resultados se guardan en el ResultSet rs
-            ResultSet rs = s.executeQuery("select * from productos");
+            ResultSet rs = s.executeQuery("select Id,Modelo,Precio from productos");
 
             // Se recorre el ResultSet, mostrando por pantalla los resultados.
             while (rs.next()) {
